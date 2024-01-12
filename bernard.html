@@ -1,146 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bernard Arnault & family</title>
     <style>
-      body {
-        overflow-x: hidden;
-      }
       * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
       }
+
+      .heading {
+        text-align: center;
+        background-color: black;
+        color: rgb(250, 250, 250);
+        font-size: 2.4rem;
+        padding: 8px 0;
+        letter-spacing: -2px;
+      }
+
+      .details {
+        color: #000000de;
+        font-weight: 600;
+        font-family: "Work Sans", sans-serif;
+        padding: 15px 50px;
+      }
+
+      #rank,
+      #stamp {
+        font-size: 1.5rem;
+        margin-right: 10px;
+      }
+
+      #main-page-link {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #main-page-link:hover {
+        text-decoration: underline;
+      }
+
+      .container-black {
+        width: 100%;
+        height: 430px;
+        background-image: radial-gradient(
+          circle at 50% 50%,
+          #737373,
+          #000 100%
+        );
+      }
+
+      .personal-data-block {
+        position: relative;
+        margin: -150px auto 50px auto;
+        width: 80%;
+        background-color: #fff;
+        font-family: "Work Sans", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgba(115, 115, 115, 0.253);
+      }
+
+      .personal-data-text {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      #personal-inner-div {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 10px;
+        column-gap: 10px;
+        row-gap: 5px;
+      }
+
+      #bold-name {
+        font-family: "Merriweather", serif;
+        font-size: 3rem;
+        color: rgb(51, 51, 51);
+      }
+
+      #net-worth {
+        color: rgb(51, 51, 51);
+        grid-row: span 2;
+        font-size: 2rem;
+        align-self: center;
+      }
+
+      #para-heading {
+        font-size: 0.7rem;
+        font-weight: 500;
+        word-spacing: -1px;
+      }
+
+      #date {
+        font-size: 0.55rem;
+        color: rgb(115, 115, 115);
+      }
+
+      .pic {
+        max-width: 45%;
+      }
+
+      .about-points {
+        font-family: "Merriweather", serif;
+        width: 80%;
+        margin: auto;
+        font-size: 1.2rem;
+        color: rgb(51, 51, 51);
+      }
+
+      .about-points > ul > li {
+        line-height: 2;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 605px) {
+        .pic {
+          max-width: 100%;
+        }
+
+        .personal-data-block {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        .personal-data-text {
+          gap: 10px;
+          text-align: center;
+        }
+
+        #bold-name {
+          font-size: 2rem;
+        }
+
+        #personal-inner-div {
+          margin-top: 15px;
+        }
+
+        #net-worth {
+          font-size: 1.7rem;
+        }
+      }
+
+      @media (min-width: 605px) and (max-width: 812px) {
+        #bold-name {
+          font-size: 5vw;
+        }
+      }
     </style>
-    <title>Bernard Arnault & family</title>
   </head>
   <body>
-    <h1
-      id="1"
-      style="
-        text-align: left;
-        color: white;
-        border: 50cm;
-        border-color: black;
-        margin-left: -0.6%;
-        margin-top: -0.5%;
-        margin-bottom: 10%;
-        background-color: black;
-        font-size: 250%;
-        text-align: center;
-      "
-    >
-      Forbes
-    </h1>
-    <hr style="position: relative; top: -50px" />
-    <h3
-      style="
-        color: rgba(0, 0, 0, 0.725);
-        position: relative;
-        left: 150px;
-        border-style: double;
-        border-radius: 100px;
-        border-width: 0.1em;
-        margin-right: 1240px;
-      "
-    >
-      PROFILE
-    </h3>
-    <h1
-      style="
-        color: rgba(0, 0, 0, 0.896);
-        position: relative;
-        left: 85px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      "
-    >
-      2. Bernard Arnault & family
-    </h1>
-    <h5 style="position: relative; left: 130px">CEO LVMH</h5>
-    <h1 style="position: relative; left: 130px">$147.4B</h1>
-    <h5
-      style="
-        position: relative;
-        top: -55px;
-        left: 250px;
-        color: rgba(0, 0, 0, 0.831);
-      "
-    >
-      Realtime NetWorth
-    </h5>
-    <h6
-      style="
-        position: relative;
-        top: -80px;
-        left: 269px;
-        color: rgba(0, 0, 0, 0.73);
-      "
-    >
-      As of Today
-    </h6>
+    <div class="container">
+      <h1 class="heading">Forbes</h1>
+      <div class="details">
+        <span id="rank">#2</span><span id="stamp">|</span
+        ><a id="main-page-link" href="https://harshdev4.github.io/forbes/"
+          >Real-Time Billionaire</a
+        >
+      </div>
+      <div class="container-black"></div>
 
-    <img
-      src="https://specials-images.forbesimg.com/imageserve/5dc05518ca425400079c659f/416x416.jpg?background=000000&cropX1=0&cropX2=4000&cropY1=1209&cropY2=5212"
-      width="350"
-      style="position: relative; left: 65%; top: -250px"
-    />
-    <hr style="color: rgba(0, 0, 0, 0.765); position: relative; top: -120px" />
+      <div class="personal-data-block">
+        <div class="personal-data-text">
+          <span>PROFILE</span>
+          <h1 id="bold-name">Bernard Arnault & family</h1>
+          <span>Chairman And CEO, LVMH Moët Hennessy Louis Vuitton</span>
+          <div id="personal-inner-div">
+            <h2 id="net-worth">$182.1B</h2>
+            <p id="para-heading">Real Time Net Worth</p>
+            <span id="date">as of 1/12/24</span>
+          </div>
+        </div>
 
-    <ul>
-      <li
-        style="
-          font-size: 150%;
-          position: relative;
-          top: -100px;
-          line-height: 200%;
-        "
-      >
-        Bernard Arnault oversees the LVMH empire of some 70 fashion and
-        cosmetics brands, including Louis Vuitton and Sephora.
-      </li>
-      <li
-        style="
-          font-size: 150%;
-          position: relative;
-          top: -100px;
-          line-height: 200%;
-        "
-      >
-        In January 2021, LVMH acquired American jeweler Tiffany & Co for $15.8
-        billion, believed to be the biggest luxury brand acquisition ever.
-      </li>
-      <li
-        style="
-          font-size: 150%;
-          position: relative;
-          top: -100px;
-          line-height: 200%;
-        "
-      >
-        LVMH spent $3.2 billion in 2019 for luxury hospitality group Belmond,
-        which owns or manages 46 hotels, trains and river cruises.
-      </li>
-      <li
-        style="
-          font-size: 150%;
-          position: relative;
-          top: -100px;
-          line-height: 200%;
-        "
-      >
-        His father made a small fortune in construction; Arnault got his start
-        by putting up $15 million from that business to buy Christian Dior in
-        1985.
-      </li>
-      <li
-        style="
-          font-size: 150%;
-          position: relative;
-          top: -100px;
-          line-height: 200%;
-        "
-      >
-        Four of Arnault's five children work in corners of the LVMH empire:
-        Frédéric, Delphine, Antoine and Alexandre.
-      </li>
-    </ul>
+        <img
+          src="https://specials-images.forbesimg.com/imageserve/5dc05518ca425400079c659f/416x416.jpg?background=000000&cropX1=0&cropX2=4000&cropY1=1209&cropY2=5212"
+          alt="Bernard Arnault & family"
+          class="pic"
+        />
+      </div>
+
+      <div class="about-points">
+        <ul>
+          <li>
+            Bernard Arnault oversees the LVMH empire of 75 fashion and cosmetics
+            brands, including Louis Vuitton and Sephora.
+          </li>
+          <li>
+            LVMH acquired American jeweler Tiffany & Co in 2021 for $15.8
+            billion, believed to be the biggest luxury brand acquisition ever.
+          </li>
+          <li>
+            Arnault's holding company Agache backs venture capital firm Aglaé
+            Ventures, which has investments in businesses such as Netflix and
+            TikTok parent company ByteDance.
+          </li>
+          <li>
+            His father made a small fortune in construction; Arnault got his
+            start by putting up $15 million from that business to buy Christian
+            Dior in 1984.
+          </li>
+          <li>
+            Arnault's five children all work at LVMH; in July 2022, he proposed
+            a reorganization of his holding company Agache to give them equal
+            stakes.
+          </li>
+          <li>
+            He grew up in South Africa, then immigrated to Canada at age 17. He
+            landed in the U.S. as a transfer student to the University of
+            Pennsylvania.
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
